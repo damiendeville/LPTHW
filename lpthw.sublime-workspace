@@ -11,6 +11,21 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "ex4.1.py",
+			"settings":
+			{
+				"buffer_size": 1272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -60,15 +75,16 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/damien/GitHub/LPTHW"
 	],
 	"file_history":
 	[
+		"/Users/damien/GitHub/LPTHW/ex1.py",
 		"/Users/damien/GitHub/LPTHW/ex4.1.py",
 		"/Users/damien/GitHub/LPTHW/ex4.0.py",
 		"/Users/damien/GitHub/LPTHW/ex3.1.py",
 		"/Users/damien/GitHub/LPTHW/ex3.0.py",
 		"/Users/damien/GitHub/LPTHW/ex2.py",
-		"/Users/damien/GitHub/LPTHW/ex1.py",
 		"/Users/damien/GitHub/LPTHW/README.md",
 		"/Users/damien/Dropbox/Text/Semicolon's and such.txt",
 		"/Users/damien/Dropbox/Coursera/IIPP Part1/MiniProject 1/rpsls.py",
@@ -117,8 +133,65 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "ex4.1.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/damien/GitHub/LPTHW",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
