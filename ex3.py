@@ -32,12 +32,25 @@ print "Is it ture that 3 + 2 < 5 -7?"
 
 print 3 + 2 < 5 - 7
 
+# These two statements print a questiion and calculates the result being asked
+# in the quesion.
+
 print "What is 3 + 2?", 3 + 2
 print "What is 5 - 7?", 5 - 7
 
+# This prints a sentence acknowloging why the question printed in line 28 is
+# "False"
 print "Oh, that's why it's False."
 
+# This asks a quesiton, but doesn't have a question mark at the end of the
+# sentence
+
 print "How about some more."
+
+# These ask quesitons and evalute the answers.  The first evaluates to "True"
+# because 5 is greater than -2.  The second evaluates to "True" also because 5
+# is greater than or equal to -2.  The third evlauates to "False" because 5 is
+# NOT less than or equal to -2.
 
 print "Is it greater?", 5 > -2
 print "Is it greater or equal?", 5 >= -2
