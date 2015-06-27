@@ -20,10 +20,12 @@
 			}
 		},
 		{
+			"file": "ex5.1.py",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
+				"buffer_size": 800,
+				"line_ending": "Unix",
+				"name": "my_name = 'Zed A. Shaw'"
 			}
 		}
 	],
@@ -96,7 +98,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -110,6 +112,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"my_",
 			"\n",
 			" ",
 			"* -"
@@ -120,6 +123,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"",
 			"\"",
 			"\",\"",
 			" "
@@ -166,24 +170,25 @@
 				},
 				{
 					"buffer": 1,
+					"file": "ex5.1.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								75,
+								75
 							]
 						],
 						"settings":
 						{
-							"default_dir": "/Users/damien/GitHub/LPTHW",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"auto_name": "my_name = 'Zed A. Shaw'",
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -201,7 +206,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -238,7 +243,7 @@
 	"project": "lpthw.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
