@@ -10,8 +10,9 @@ binary = "binary"
 
 do_not = "don't"
 
-# Assigns the string "Those who know binary and those who don't" by using a formatted
-# variable %s with the values of the variables defined above (binary & do_not)
+# Assigns the string "Those who know binary and those who don't" by using a 
+# formatted variable %s with the values of the variables defined above (binary 
+# & do_not)
 
 y = "Those who %s and those who %s." % (binary, do_not)
 
@@ -23,13 +24,14 @@ print x
 
 print y
 
-# Print out the string "I said: 'There are 10 types of people'.'" by substituting the 
-# variable x for the formatted variable %r embedded in the string.
+# Print out the string "I said: 'There are 10 types of people'.'" by 
+# substituting the variable x for the formatted variable %r embedded in the 
+# string.
 
 print "I said: %r." % x
 
-# Print out the string "I also said: 'Those who know binary and those who don't.'." 
-# by substituting the variable y for the formatted variable %s
+# Print out the string "I also said: 'Those who know binary and those who 
+# don't.'." by substituting the variable y for the formatted variable %s
 
 print "I also said: '%s' ." % y
 
@@ -37,19 +39,21 @@ print "I also said: '%s' ." % y
 
 hilarious = False
 
-# Assigns the value "Isn't that joke so funny?! %r" to the variable joke_evaluaiton
-# This is tricky, because %r is not formatted in this line, it gets formatted below in 
-# the print statement.  Took me a while to figure out where %r was being formatted.
+# Assigns the value "Isn't that joke so funny?! %r" to the variable 
+# joke_evaluaiton
+# This is tricky, because %r is not formatted in this line, it gets formatted 
+# below in the print statement.  Took me a while to figure out where %r was 
+# being formatted.
 
 joke_evaluation = "Isn't that joke so funny?! %r"
 
-# prints out the variable "joke_evaluaiton" and provides the variable "hilarrious" as
-# the format for %r contained in "joke_evaluation"
+# prints out the variable "joke_evaluaiton" and provides the variable 
+# "hilarrious" as the format for %r contained in "joke_evaluation"
 
 print joke_evaluation % hilarious
 
-# Assigns the value "This is the left side of..." to w (which is short for west, which
-# is on the left side of the compass).
+# Assigns the value "This is the left side of..." to w (which is short for west, 
+# which is on the left side of the compass).
 
 w = "This is the left side of..."
 
@@ -57,8 +61,8 @@ w = "This is the left side of..."
 
 e = "a string with a right side."
 
-# Prints out e + w concatonating the two together resulting in the sentence "This is 
-# the left side of...a string with a right side."
+# Prints out e + w concatonating the two together resulting in the sentence 
+# "This is the left side of...a string with a right side."
 
 print w + e
 
@@ -69,6 +73,6 @@ print w + e
 # 1. Comments above
 # 2. Lines 3, 16, 29, 33, and 44 have strings inside another string
 # 3. Yes, you lied, there are 5 places
-# 4. This is called concatonation.  Using the + sign with strings results in concationation rather
-# than a mathematical expression.
+# 4. This is called concatonation.  Using the + sign with strings results in 
+# concationation rather than a mathematical expression.
 

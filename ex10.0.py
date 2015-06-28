@@ -44,9 +44,12 @@ print fat_cat2
 print "This is how to add a %s with a format string" % "\nnewline"
 print "This is how to add a %s with a format string" % "\ttab"
 
-print "%s a %s at the beginning of a line and add the word %s in the sentence with a format string" % ("\tAdd", "tab", "tab")
+print """%s a %s at the beginning of a line and add the word %s in the sentence 
+	with a format string" % ("\tAdd", "tab", "tab")
+	"""
 print "%s with a format strings and variables %s" % ("\nAgain", "\n")
-beginning = "%s a %s at the beggining of a line and add the word" % ("\tAdd", "tab")
+beginning = "%s a %s at the beggining of a line and add the word" % (
+	"\tAdd", "tab")
 end = "%s in the sentence with a format string." % "tab" 
 
 print beginning, end
