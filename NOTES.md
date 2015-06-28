@@ -99,9 +99,13 @@ All initial statements lines need to start with no spaces (indentation comes lat
 2. %r is used for a string and converts any python object using repr().  This means that Python returns a string containign a printable representation of an object https://docs.python.org/2/library/functions.html#func-repr.  Essentially, python will print the strings in the most efficient manner it can, not necessarilly as you wrote them.  %r is often used for debugging.  If you change it to %s Then no quotes are printed around any of the strings and the output looks like this:
 
 1 2 3 4
+
 one two three four
+
 True False False True
+
 %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s
+
 I had this thing. That you could type up right. But it didn't sing. So I said goodnight.
 
 ----
