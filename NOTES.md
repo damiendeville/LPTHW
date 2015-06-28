@@ -19,8 +19,8 @@ All initial statements lines need to start with no spaces (indentation comes lat
 It seems that you can't use an escape character alone at the beginning of a format string
 
 	This works
-	print "%s a %s at the beginning of a line and add the word %s in the sentence with a format 	string" % ("\tAdd", "tab", "tab")
+	print "%s a %s at the beginning of a line and add the word %s in the sentence with a format string" % ("\tAdd", "tab", "tab")
 	
 	This Doesn't
-	print "%s Add a %s at the beginning of a line and add the word %s in the sentence with a format 	string" % ("\t", "tab", "tab")
+	print "%s Add a %s at the beginning of a line and add the word %s in the sentence with a format string" % ("\t", "tab", "tab")
 
