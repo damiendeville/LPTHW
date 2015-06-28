@@ -19,3 +19,9 @@ print "So, you're %r old, %r tall and %r heavy." % (
 #     On Unix, GNU readline is used if enabled.  The prompt string, if given,
 #     is printed without a trailing newline before reading.
 # (END)
+#
+# 2. Yup, typing q quits pydoc, who'd have thunk it.  
+# 
+# 3. pydoc - Document generation and online help manual
+# See:  https://docs.python.org/2/library/pydoc.html
+# Got to say that pydoc is pretty cool

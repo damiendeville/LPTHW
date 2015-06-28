@@ -112,7 +112,7 @@ Output
 
 ##### Study Drills
 1. No mistakes made.  
-2. Went thourh and commented code in ex9.0.py 
+2. Went though and commented code in ex9.0.py 
 
 ----
 
