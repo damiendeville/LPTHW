@@ -1,10 +1,9 @@
 ## Notes
-----------
 
 This is a file for tracking mistakes I make and questions I have for additional research so that I can learn from them over time without getting bogged down in meantime.
 
 #### Exercise 8
-----------
+----
 
 When I fist wrote ex08.py I somehow ended up with a tab at the begining of each line.  Not sure how, but python wouldn't execte it because it was an indentation error.
 
@@ -19,7 +18,7 @@ a artifact from a previous editing session.
 All initial statements lines need to start with no spaces (indentation comes later.)
 
 #### Exercise 10
------------
+----
 
 It seems that you can't use an escape character alone at the beginning of a format string
 
