@@ -61,3 +61,14 @@ e = "a string with a right side."
 # the left side of...a string with a right side."
 
 print w + e
+
+
+
+# Study Drill Answers
+# -------------------
+# 1. Comments above
+# 2. Lines 3, 16, 29, 33, and 44 have strings inside another string
+# 3. Yes, you lied, there are 5 places
+# 4. This is called concatonation.  Using the + sign with strings results in concationation rather
+# than a mathematical expression.
+

@@ -40,3 +40,13 @@ print "There will be", cars_not_driven, "empty cars today."
 print "We can transport", carpool_capacity, "people today."
 print "We have", passengers, "to carpool today."
 print "We need to put about", average_passengers_per_car, "in each car."
+
+# Study Drills
+# ------------
+# 1. the use of 4.0 is arbitrary here because all math is with whole numbers.  
+# Changing it to 4 makes no difference in this program.
+# 2. It's true that 4.0 is a floating point number
+# 3. This file includes the comments
+# 4. "=" is used for assignment, where as "==" is used for mathmatical equality.
+# 5. Yes, I'm familiar with the underscore - it is used in place of spaces in 
+# unix_and_programing
