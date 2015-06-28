@@ -6,6 +6,8 @@ This is a file for tracking mistakes I make and questions I have for additional 
 
 #### Exercise 4
 
+http://learnpythonthehardway.org/book/ex4.html
+
 ##### Study Drills
 
 1. the use of 4.0 is arbitrary here because all math is with whole numbers. Changing it to 4 makes no difference in this program.
@@ -18,6 +20,8 @@ unix_and_programing.
 ----
 
 #### Exercise 5
+
+http://learnpythonthehardway.org/book/ex5.html
 
 ##### Study Drills
 
@@ -57,6 +61,8 @@ error because the variables are all strings, not integers.
 
 #### Exercise 6
 
+http://learnpythonthehardway.org/book/ex6.html
+
 ##### Study Drills
 
 1. Comments are included in ex06.1.py
@@ -68,6 +74,8 @@ error because the variables are all strings, not integers.
 
 #### Exercise 7
 
+http://learnpythonthehardway.org/book/ex7.html
+
 ##### Study Drills
 
 1. Added Comments to the code in ex07.1.py
@@ -78,6 +86,8 @@ error because the variables are all strings, not integers.
 ----
 
 #### Exercise 8
+
+http://learnpythonthehardway.org/book/ex8.html
 
 ##### Notes
 
@@ -110,6 +120,8 @@ Output
 
 #### Exercise 9
 
+http://learnpythonthehardway.org/book/ex9.html
+
 ##### Study Drills
 1. No mistakes made.  
 2. Went though and commented code in ex9.0.py 
@@ -117,6 +129,8 @@ Output
 ----
 
 #### Exercise 10
+
+http://learnpythonthehardway.org/book/ex10.html
 
 ##### Notes
 
@@ -185,6 +199,8 @@ Code from ex10.0.py
 
 #### Exercise 11
 
+http://learnpythonthehardway.org/book/ex11.html
+
 ##### Study Drills
 
 1. raw\_input() takes input from the user.  Optionally, you can specify a prompt raw\_input('--->') prints '--->' as a prompt to the user. See:  https://docs.python.org/2/library/functions.html#raw_input
@@ -225,6 +241,8 @@ Aditional Code
 
 #### Exercise 12
 
+http://learnpythonthehardway.org/book/ex12.html
+
 ##### Study Drills
 
 1. Katahdin:LPTHW damien$ pydoc raw_input
@@ -245,3 +263,41 @@ output
 2. Yup, typing q quits pydoc, who'd have thunk it.  
 
 3. pydoc - Document generation and online help manual See:  https://docs.python.org/2/library/pydoc.html Got to say that pydoc is pretty cool
+
+----
+
+#### Exercise 13
+
+http://learnpythonthehardway.org/book/ex13.html
+
+#### Study Drills
+
+1. The error comes from the fact that the argument is expecting more values on the command line than it got.
+2. Here's the script
+
+ex13.1.py
+
+	from sys import argv
+	
+	script, first, second = argv
+	
+	print "The script is called:", script
+	print "Your first variable is:", first
+	print "Your second variable is:", second
+
+3. This script combines raw_input() with argv
+
+ex13.2.py
+
+	# Study Drill 2
+	from sys import argv
+	
+	script, beer, wheat, ipa, porter, stout = argv
+	
+	print "There are several kinds of", beer
+	print "Some people like", wheat
+	print "Others are fans of", ipa
+	print "Still others like", porter
+	print "I am partial to", stout
+
+
