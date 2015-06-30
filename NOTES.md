@@ -150,6 +150,8 @@ Need to investigate why this is the case.
 
 1. Memorize the escape sequences.  How about I just keep them handy.  I'm sure I'll learn them over time.  They're not that different from shell escapes any way.
 
+Escape Sequences
+
 	Escape 		What it does
 	-------------------------------------------------------------------------
 		\\ 			Backslash ()
