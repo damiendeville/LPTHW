@@ -311,3 +311,112 @@ http://learnpythonthehardway.org/book/ex14.html'
 1. Zork and Adventure were early text based games.  You can play Zork at http://www.web-adventures.org/cgi-bin/webfrotz?s=ZorkDungeon 
 2. Changed the prompt from "> " to "# "
 3. Not sure what's so difficult to understand about using """ for multi-line statements with format strings, but, okay, I get it.
+
+----
+
+#### Exercise 15
+
+http://learnpythonthehardway.org/book/ex15.html
+
+##### Errors
+
+	ddeville-mbp15:LPTHW ddeville$ python ex15.0.py ex15_sample.txt
+	Here's your file 'ex15_sample.txt':
+	This is stuff I typed into a file.
+	It is really cool stuff.
+	Lots and lots of fun to have in here.
+	Type the filename again:
+	> ex15_sample.txt
+	Traceback (most recent call last):
+	  File "ex15.0.py", line 15, in <module>
+	    print text_again.read()
+	NameError: name 'text_again' is not defined
+
+This error was casued by a typo with "text_again" in line 15, the variable is named "txt\_again" wiht no "e".
+
+When working on Study Drill #5 ran into this:
+
+	ddeville-mbp15:LPTHW ddeville$ python ex15.3.py
+	Type in your filename:
+	> ex15_sample.txt
+	Here's your file 'ex15_sample.txt':
+	Traceback (most recent call last):
+	  File "ex15.3.py", line 9, in <module>
+	    print txt.read()
+	AttributeError: 'str' object has no attribute 'read'
+	ddeville-mbp15:LPTHW ddeville$
+
+This was the file:
+
+	from sys import argv
+	
+	# script, filename = argv
+	
+	print "Type in your filename:"
+	txt = raw_input("> ")
+	
+	print "Here's your file %r:" % txt
+	print txt.read()
+	
+	print "Type the filename again:"
+	file_again = raw_input("> ")
+	
+	txt_again = open(file_again)
+	
+	print txt_again.read()
+
+The problem is that the variable txt is a string for the file name, and I needed to open the file before reading it.
+
+Fixed it by making the changes below:
+
+	from sys import argv
+	
+	# script, filename = argv
+	
+	print "Type in your filename:"
+	filename = raw_input("> ")
+	
+	txt = open(filename)
+	
+	print "Here's your file %r:" % txt
+	print txt.read()
+	
+	print "Type the filename again:"
+	file_again = raw_input("> ")
+	
+	txt_again = open(file_again)
+	
+	print txt_again.read()
+
+##### Study Drills
+
+1. Added comments explaining the program.
+5. It seems to me that prompting the user is desireable over having the user specify arugments on the command line.  
+7. It's a bit confusing to me the way file closure is working in here.  This is counter intuitive to me since we're closing the VAR "txt", not the var "filename."
+
+	# Prints out the instruciton to the user with a prompt.
+	print "Type in your filename:"
+	filename = raw_input("> ")
+	
+	
+	# Captures the user's input and assigns it to the variable txt
+	txt = open(filename)
+	
+	# Prints out the contents of the file specified by the user by calling the 
+	# function "read" on the variable "txt", which is assigned to the user's input
+	print "Here's your file %r:" % txt
+	print txt.read()
+	
+	# Closes the file.  This is counter intuitive to me since we're closing the VAR
+	# txt, not filename - need to investiage this
+	txt.close()
+	
+	# Same as above
+	print "Type the filename again:"
+	file_again = raw_input("> ")
+	
+	
+	txt_again = open(file_again)
+	
+	print txt_again.read()
+	txt_again.close()
