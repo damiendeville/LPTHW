@@ -270,7 +270,7 @@ output
 
 http://learnpythonthehardway.org/book/ex13.html
 
-#### Study Drills
+##### Study Drills
 
 1. The error comes from the fact that the argument is expecting more values on the command line than it got.
 2. Here's the script
@@ -300,4 +300,14 @@ ex13.2.py
 	print "Still others like", porter
 	print "I am partial to", stout
 
+----
 
+#### Exercise 14
+
+http://learnpythonthehardway.org/book/ex14.html'
+
+##### Study Drills
+
+1. Zork and Adventure were early text based games.  You can play Zork at http://www.web-adventures.org/cgi-bin/webfrotz?s=ZorkDungeon 
+2. Changed the prompt from "> " to "# "
+3. Not sure what's so difficult to understand about using """ for multi-line statements with format strings, but, okay, I get it.
