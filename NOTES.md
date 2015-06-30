@@ -394,6 +394,8 @@ Fixed it by making the changes below:
 5. It seems to me that prompting the user is desirable over having the user specify arguments on the command line.  
 7. It's a bit confusing to me the way file closure is working in here.  This is counter intuitive to me since we're closing the VAR "txt", not the var "filename."
 
+Code with comments
+
 	# Prints out the instruction to the user with a prompt.
 	print "Type in your filename:"
 	filename = raw_input("> ")
