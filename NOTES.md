@@ -420,3 +420,56 @@ Fixed it by making the changes below:
 	
 	print txt_again.read()
 	txt_again.close()
+
+----
+
+#### Exercise 16
+
+http://learnpythonthehardway.org/book/ex16.html
+
+##### Study Drills
+
+1. Put in full comments in ex16.0.py
+2. Created ex16.1.py, which reads the file
+3. First attempt failed:
+
+First line of bad code
+
+	#target.write(%r "\n" %r "\n" %r "\n") % (line1, line2, line3)
+	ddeville-mbp15:LPTHW ddeville$ python ex16.2.py
+		File "ex16.2.py", line 50
+    		target.write(%r "\n" %r "\n" %r "\n") % (line1, line2, line3)
+						  ^
+	SyntaxError: invalid syntax
+
+Thought through it a bit more and made it work in ex16.2.py with:
+
+	file = "%r \n %r \n %r \n" % (line1, line2, line3)
+	target.write(file)
+
+But that yielded:
+
+	ddeville-mbp15:LPTHW ddeville$ more test2.txt
+	'The quick brown fox'
+	 'jumped over'
+	 'the lazy dog'
+
+Changed from %r repr() to %s which fixed the '' problem, but there was a space at the beginning of line 2 and line 3.  Realized this was because of the space between \n and %s in the string.
+
+	ddeville-mbp15:LPTHW ddeville$ python ex16.2.py test2.txt
+	We're going to erase 'test2.txt'.
+	If you don't want that, hit CRTL-C (^C).
+	If you do want that, hit RETURN.
+	?
+	Opening the file...
+	Truncating the file.  Goodbye!
+	Now I'm goint to ask you for three lines.
+	line 1: the quick brown fox
+	line 2: jumped over
+	line 3: the lazy dog
+	I'm going to write these to the file.
+	And finally, we close it.
+	ddeville-mbp15:LPTHW ddeville$ more test2.txt
+	the quick brown fox
+	jumped over
+	the lazy dog
