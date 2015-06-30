@@ -13,7 +13,7 @@ http://learnpythonthehardway.org/book/ex4.html
 1. the use of 4.0 is arbitrary here because all math is with whole numbers. Changing it to 4 makes no difference in this program.
 2. It's true that 4.0 is a floating point number
 3. This file includes the comments
-4. "=" is used for assignment, where as "==" is used for mathmatical equality.
+4. "=" is used for assignment, where as "==" is used for mathematical equality.
 5. Yes, I'm familiar with the underscore - it is used in place of spaces in 
 unix_and_programing.
 
@@ -68,7 +68,7 @@ http://learnpythonthehardway.org/book/ex6.html
 1. Comments are included in ex06.1.py
 2. Lines 3, 16, 29, 33, and 44 have strings inside another string in ex06.1.py
 3. The author said there were 4, but there are actually 5 places where strings are inside strings.
-4. This is called concatonation.  Using the + sign with strings results in concationation rather than a mathematical expression.
+4. This is called concatenation.  Using the + sign with strings results in concatenation rather than a mathematical expression.
 
 ----
 
@@ -91,7 +91,7 @@ http://learnpythonthehardway.org/book/ex8.html
 
 ##### Notes
 
-When I fist wrote ex08.py I somehow ended up with a tab at the begining of each line.  Not sure how, but python wouldn't execte it because it was an indentation error.
+When I fist wrote ex08.py I somehow ended up with a tab at the beginning of each line.  Not sure how, but python wouldn't execute it because it was an indentation error.
 
 	File "/Users/damien/GitHub/LPTHW/ex9.0.py", line 6
     print "Hear are the days: ", days
@@ -106,7 +106,7 @@ All initial statements lines need to start with no spaces (indentation comes lat
 ##### Study Drills
 
 1. No errors.
-2. %r is used for a string and converts any python object using repr().  This means that Python returns a string containign a printable representation of an object https://docs.python.org/2/library/functions.html#func-repr.  Essentially, python will print the strings in the most efficient manner it can, not necessarilly as you wrote them.  %r is often used for debugging.  If you change it to %s Then no quotes are printed around any of the strings and the output looks like this:
+2. %r is used for a string and converts any python object using repr().  This means that Python returns a string containing a printable representation of an object https://docs.python.org/2/library/functions.html#func-repr.  Essentially, python will print the strings in the most efficient manner it can, not necessarily as you wrote them.  %r is often used for debugging.  If you change it to %s Then no quotes are printed around any of the strings and the output looks like this:
 
 Output 
 
@@ -189,7 +189,7 @@ Code from ex10.0.py
 		with a format string" % ("\tAdd", "tab", "tab")
 		"""
 	print "%s with a format strings and variables %s" % ("\nAgain", "\n")
-	beginning = "%s a %s at the beggining of a line and add the word" % (
+	beginning = "%s a %s at the beginning of a line and add the word" % (
 		"\tAdd", "tab")
 	end = "%s in the sentence with a format string." % "tab" 
 	
@@ -222,7 +222,7 @@ Also It uses %s instead of %r so that it prints pretty.
 	
 3. Here is a new form, similar to the first one, asking different questions.
 
-Aditional Code
+Additional Code
 
 	print "\n"
 	print "How many beers have you had?",
@@ -391,10 +391,10 @@ Fixed it by making the changes below:
 ##### Study Drills
 
 1. Added comments explaining the program.
-5. It seems to me that prompting the user is desireable over having the user specify arugments on the command line.  
+5. It seems to me that prompting the user is desirable over having the user specify arguments on the command line.  
 7. It's a bit confusing to me the way file closure is working in here.  This is counter intuitive to me since we're closing the VAR "txt", not the var "filename."
 
-	# Prints out the instruciton to the user with a prompt.
+	# Prints out the instruction to the user with a prompt.
 	print "Type in your filename:"
 	filename = raw_input("> ")
 	
@@ -408,7 +408,7 @@ Fixed it by making the changes below:
 	print txt.read()
 	
 	# Closes the file.  This is counter intuitive to me since we're closing the VAR
-	# txt, not filename - need to investiage this
+	# txt, not filename - need to investigate this
 	txt.close()
 	
 	# Same as above
