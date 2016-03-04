@@ -477,3 +477,20 @@ Changed from %r repr() to %s which fixed the '' problem, but there was a space a
 	the quick brown fox
 	jumped over
 	the lazy dog
+
+#### Exercise 17
+
+http://learnpythonthehardway.org/book/ex17.html
+
+##### Study Drills
+
+1. Put in comments in ex16.0.py
+2. Spent a lot of time trying to figure out how to shorten lines 14 and 15 into one line. I read and re-read the docs at https://docs.python.org/2/tutorial/inputoutput.html Tried a variety of things and eventually googled it.  Funnilly enough the answer is in the Common Study Questions section...
+
+Attempted Code that gave syntax errors.
+
+	indata = open(%r, 'r') % in_file 
+	indata = read(in_file)
+
+3. So, yeah you can write it out on one line with semi-colons, but bad form...really bad form.
+4. If you open a file with open('file' 'w') and don't close it, you'll keep that file open in memory and that is a bad thing. Better to close the file after you're done with it.  
